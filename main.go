@@ -42,7 +42,7 @@ func main() {
 	r.POST("/submit", SubmitInput)
 
 	//r.RunTLS(":443", "/etc/letsencrypt/live/travel-u.world/fullchain.pem", "/etc/letsencrypt/live/travel-u.world/privkey.pem")
-	r.Run(":443")
+	r.Run(":8080")
 	//m := autocert.Manager{
 	//	Prompt:     autocert.AcceptTOS,
 	//	HostPolicy: autocert.HostWhitelist("hammerhead-app-9dvgj.ondigitalocean.app", "localhost"),
